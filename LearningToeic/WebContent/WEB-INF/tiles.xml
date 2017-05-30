@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="base.definition" template="/WEB-INF/views/layouts/layout.jsp">
+		<put-attribute name="title" value="LEARNING TOEIC" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-user.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="profile" template="/WEB-INF/views/layouts/profile.jsp">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="profile_info" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile Info User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/profile_info.jsp" />
+	</definition>
+	
+	<definition name="profile_edit" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile Edit User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/profile_edit.jsp" />
+	</definition>
+	
+	<definition name="profile_change_password" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile change Password" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/profile_change_password.jsp" />
+	</definition>
+	
+	<definition name="profile_change_image" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile change Image" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/profile_change_image.jsp" />
+	</definition>
+	
+	<definition name="my_activities" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile Activites" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/my_activities.jsp" />
+	</definition>
+	
+	<definition name="chart" extends="profile">
+		<put-attribute name="title" value="LEARNING TOEIC - Profile Chart Score" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-profile.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/chart.jsp" />
+	</definition>
+	
+	<definition name="index" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/body/index.jsp" />
+	</definition>
+	
+	<definition name="404" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Error Page" />
+		<put-attribute name="body" value="/WEB-INF/views/body/404.jsp" />
+	</definition>
+ 	
+	<definition name="indexAdmin" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Admin" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/indexAdmin.jsp" />
+	</definition>
+	
+	<definition name="indexSubAdmin" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC SubAdmin" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/indexSubAdmin.jsp" />
+	</definition>
+	
+	<definition name="manageUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/manageUser.jsp" />
+	</definition>
+	
+	<definition name="list_user_active" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/list_user_active.jsp" />
+	</definition>
+	
+	<definition name="list_user_blocked" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/list_user_blocked.jsp" />
+	</definition>
+	
+	<definition name="confirmDeleteUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Delete User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/confirmDeleteUser.jsp" />
+	</definition>
+	
+	<definition name="searchUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Search User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchUser.jsp" />
+	</definition>
+	
+	<definition name="changeRole" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Change Role User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/changeRole.jsp" />
+	</definition>
+	
+	<definition name="activeUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Active User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/activeUser.jsp" />
+	</definition>
+	
+	<definition name="blockUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Block User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu_subadmin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/blockUser.jsp" />
+	</definition>
+	
+	<definition name="signin" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Login" />
+		<put-attribute name="body" value="/WEB-INF/views/body/signin.jsp" />
+	</definition>
+	
+	<definition name="register" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Register" />
+		<put-attribute name="body" value="/WEB-INF/views/body/register.jsp" />
+	</definition>
+	
+	<definition name="forgotPassword" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Forgot password" />
+		<put-attribute name="body" value="/WEB-INF/views/body/forgotPassword.jsp" />
+	</definition>
+	
+	<definition name="updateUser" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Update User" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-user.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/updateUser.jsp" />
+	</definition>
+	
+	<definition name="manageVocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage lesson grammar" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/manageVocabulary.jsp" />
+	</definition>
+	
+	<definition name="postVocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Post vocabulary" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/postVocabulary.jsp" />
+	</definition>
+	
+	<definition name="updateVocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Update vocabulary lesson" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/updateVocabulary.jsp" />
+	</definition>
+	
+	<definition name="confirmDeleteVocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Delete vocabulary lesson" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/confirmDeleteVocab.jsp" />
+	</definition>
+	
+	<definition name="searchVocabularyAd" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC search vocabulary" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchVocabularyAd.jsp" />
+	</definition>
+
+	<definition name="searchVocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC search vocabulary" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-user.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchVocabulary.jsp" />
+	</definition>
+	
+	<definition name="vocabulary" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC vocabulary" />
+		<put-attribute name="body" value="/WEB-INF/views/body/vocabulary.jsp" />
+	</definition>
+	
+	<definition name="vocabularyDetail" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC vocabulary" />
+		<put-attribute name="body" value="/WEB-INF/views/body/vocabularyDetail.jsp" />
+	</definition>
+	
+	<definition name="manageGrammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage lesson grammar" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/manageGrammar.jsp" />
+	</definition>
+	
+	<definition name="postGrammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Post grammar" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/postGrammar.jsp" />
+	</definition>
+	
+	<definition name="updateGrammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Update grammar lesson" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/updateGrammar.jsp" />
+	</definition>
+	
+	<definition name="confirmDeleteGrammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Delete grammar lesson" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/confirmDeleteGram.jsp" />
+	</definition>
+	
+	<definition name="searchGrammarAd" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC search grammar" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchGrammarAd.jsp" />
+	</definition>
+
+	<definition name="searchGrammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC search grammar" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-user.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchGrammar.jsp" />
+	</definition>
+	
+	<definition name="grammar" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC grammar" />
+		<put-attribute name="body" value="/WEB-INF/views/body/grammar.jsp" />
+	</definition>
+	
+	<definition name="grammarDetail" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC grammar" />
+		<put-attribute name="body" value="/WEB-INF/views/body/grammarDetail.jsp" />
+	</definition>
+	
+	<definition name="manageExercise" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Manage exercise" />
+		<put-attribute name="body" value="/WEB-INF/views/body/manageExercise.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+	</definition>
+	
+	<definition name="updateExercise" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Update exercise" />
+		<put-attribute name="body" value="/WEB-INF/views/body/updateExercise.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+	</definition>
+	
+	<definition name="confirmDeleteExercise" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Delete exercise" />
+		<put-attribute name="body" value="/WEB-INF/views/body/confirmDeleteExercise.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+	</definition>
+	
+	<definition name="doExercise" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Do Exercise" />
+		<put-attribute name="body" value="/WEB-INF/views/body/doExercise.jsp" />
+	</definition>
+	
+	<definition name="result" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Do Exercise" />
+		<put-attribute name="body" value="/WEB-INF/views/body/result.jsp" />
+	</definition>
+	
+	<definition name="manageTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC Manage lesson test" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/manageTest.jsp" />
+	</definition>
+	
+	<definition name="createTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Create new Test" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/createTest.jsp" />
+	</definition>
+	
+	<definition name="confirmDeleteTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Delete test" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/confirmDeleteTest.jsp" />
+	</definition>
+	
+	<definition name="searchTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - TOEIC search test" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/searchTest.jsp" />
+	</definition>
+	
+	<definition name="viewTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - View test" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu/menu-admin.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/body/viewTest.jsp" />
+	</definition>
+	
+	<definition name="doTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Practice test" />
+		<put-attribute name="body" value="/WEB-INF/views/body/doTest.jsp" />
+	</definition>
+	
+	<definition name="practiceFullTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - practiceFullTest" />
+		<put-attribute name="body" value="/WEB-INF/views/body/practiceFullTest.jsp" />
+	</definition>
+	
+	<definition name="submitTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Submit" />
+		<put-attribute name="body" value="/WEB-INF/views/body/submitTest.jsp" />
+	</definition>
+	
+	<definition name="selectTest" extends="base.definition">
+		<put-attribute name="title" value="LEARNING TOEIC - Test List" />
+		<put-attribute name="body" value="/WEB-INF/views/body/selectTest.jsp" />
+	</definition>
+	
+</tiles-definitions>
